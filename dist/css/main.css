@@ -2,3 +2,143 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box; }
+
+html,
+body {
+  max-width: 100vw;
+  font-family: "DM Sans", sans-serif; }
+
+a {
+  text-decoration: none; }
+
+ul,
+li {
+  list-style-type: none; }
+
+#topBar .container p {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.8rem;
+  color: #545454;
+  background-color: #f3f3f3; }
+
+#header .container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  margin-bottom: 3rem; }
+  #header .container .header-logo {
+    font-size: 2rem;
+    font-weight: 500; }
+    #header .container .header-logo a {
+      color: #545454; }
+      #header .container .header-logo a i {
+        color: #3c6997; }
+      #header .container .header-logo a span {
+        color: #3c6997; }
+  #header .container .main-nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem; }
+    #header .container .main-nav ul li a {
+      color: #545454;
+      font-weight: 600; }
+      #header .container .main-nav ul li a:hover {
+        color: #3c6997;
+        border-bottom: 2px #3c6997 solid;
+        transition: 0.2s ease-in-out; }
+  #header .container .get-started a {
+    color: #fff;
+    background-color: #3c6997;
+    font-weight: 800;
+    padding: 0.7rem;
+    border-radius: 5px; }
+    #header .container .get-started a:hover {
+      background: #646464;
+      transition: 0.2s ease-in-out; }
+
+#homeHero .container {
+  display: grid;
+  justify-content: center;
+  grid-gap: 3rem;
+  grid-template-areas: "info blog1 blog2" "info blog1 blog2" "info blog1 blog3"; }
+  #homeHero .container div:first-child {
+    grid-area: info;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
+    #homeHero .container div:first-child h1 {
+      color: #545454;
+      font-size: 3.5rem; }
+      #homeHero .container div:first-child h1 span {
+        color: #3c6997; }
+    #homeHero .container div:first-child p {
+      color: #545454;
+      font-size: 1.5rem;
+      font-weight: 400; }
+    #homeHero .container div:first-child a {
+      color: #fff;
+      background-color: #3c6997;
+      text-align: center;
+      border-radius: 5px;
+      width: 150px;
+      padding: 1rem;
+      margin-top: 0.5rem; }
+    #homeHero .container div:first-child h2 {
+      color: #3c6997;
+      font-size: 1rem;
+      font-weight: 300;
+      margin-top: 1rem; }
+
+#homeHero div:nth-child(2) {
+  grid-area: blog1;
+  display: flex;
+  flex-direction: column;
+  background: #f3f3f3;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 300px;
+  border-radius: 5px; }
+  #homeHero div:nth-child(2) img {
+    position: relative;
+    margin: 3rem 0 8rem 0;
+    width: 300px; }
+  #homeHero div:nth-child(2) h1,
+  #homeHero div:nth-child(2) p {
+    color: #545454;
+    margin-left: 2rem; }
+  #homeHero div:nth-child(2) h1 {
+    font-size: 0.9rem;
+    font-size: 400; }
+  #homeHero div:nth-child(2) p {
+    font-size: 1.2rem;
+    font-weight: 100; }
+  #homeHero div:nth-child(2) a {
+    color: #fff;
+    background-color: #3c6997;
+    text-align: center;
+    width: 120px;
+    padding: 1rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    border-radius: 5px; }
+    #homeHero div:nth-child(2) a:hover {
+      background-color: #646464;
+      transition: 0.2s ease-in-out; }
+
+#homeHero div:nth-child(3) {
+  grid-area: blog2;
+  background-image: url(/dist/assets/images/blog-2.jpg);
+  background-size: cover;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 300px;
+  border-radius: 5px; }
+
+#homeHero div:nth-child(4) {
+  grid-area: blog3;
+  background-image: url(/dist/assets/images/blog-3.jpg);
+  background-size: cover;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 300px;
+  border-radius: 5px; }
