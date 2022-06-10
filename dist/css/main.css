@@ -27,8 +27,7 @@ li {
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
-  padding: 2rem;
-  margin-bottom: 3rem; }
+  padding: 2rem; }
   #header .container .header-logo {
     font-size: 2rem;
     font-weight: 500; }
@@ -42,6 +41,9 @@ li {
     display: flex;
     flex-direction: row;
     gap: 1rem; }
+    #header .container .main-nav ul li .current {
+      color: #3c6997;
+      border-bottom: 1px solid #3c6997; }
     #header .container .main-nav ul li a {
       color: #545454;
       font-weight: 600; }
@@ -63,6 +65,7 @@ li {
   display: grid;
   justify-content: center;
   grid-gap: 3rem;
+  margin-top: 3rem;
   grid-template-areas: "info blog1 blog2" "info blog1 blog2" "info blog1 blog3"; }
   #homeHero .container div:first-child {
     grid-area: info;
@@ -371,6 +374,311 @@ li {
     width: 140px;
     border-radius: 5px;
     margin-top: 1rem; }
+
+#servicesHero .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/dist/assets/images/services-1.jpg);
+  background-size: cover;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: 450px; }
+  #servicesHero .container::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 450px;
+    background-color: black;
+    opacity: 0.5; }
+  #servicesHero .container h1 {
+    color: white;
+    font-size: 4rem;
+    position: relative; }
+
+.mix-mast .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .mix-mast .container div {
+    width: 1000px;
+    padding: 2rem; }
+    .mix-mast .container div h1 {
+      color: #3c6997;
+      font-size: 3rem; }
+    .mix-mast .container div p {
+      color: #545454;
+      font-size: 1.2rem; }
+
+#serviceBanner .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f3f3;
+  padding: 2rem; }
+  #serviceBanner .container h1 {
+    font-size: 3rem;
+    color: #545454; }
+
+#serviceCards .container {
+  display: grid;
+  grid-template-columns: repeat(2, 400px);
+  justify-content: center;
+  background-color: #f3f3f3;
+  grid-gap: 2rem;
+  padding: 2rem; }
+  #serviceCards .container div:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(/dist/assets/images/services-2.jpg);
+    background-size: cover;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    width: 400px;
+    height: 280px;
+    border-radius: 5px; }
+    #serviceCards .container div:first-child::before {
+      content: "";
+      position: absolute;
+      width: 400px;
+      height: 280px;
+      background-color: black;
+      opacity: 0.5;
+      border-radius: 5px; }
+    #serviceCards .container div:first-child h1 {
+      position: relative;
+      color: #fff;
+      font-size: 2rem; }
+  #serviceCards .container div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(/dist/assets/images/services-3.jpg);
+    background-size: cover;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    width: 400px;
+    height: 280px;
+    border-radius: 5px; }
+    #serviceCards .container div:nth-child(2)::before {
+      content: "";
+      position: absolute;
+      width: 400px;
+      height: 280px;
+      background-color: black;
+      opacity: 0.5;
+      border-radius: 5px; }
+    #serviceCards .container div:nth-child(2) h1 {
+      position: relative;
+      color: #fff;
+      font-size: 2rem; }
+  #serviceCards .container div:nth-child(3) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(/dist/assets/images/services-4.jpg);
+    background-size: cover;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    width: 400px;
+    height: 280px;
+    border-radius: 5px; }
+    #serviceCards .container div:nth-child(3)::before {
+      content: "";
+      position: absolute;
+      width: 400px;
+      height: 280px;
+      background-color: black;
+      opacity: 0.5;
+      border-radius: 5px; }
+    #serviceCards .container div:nth-child(3) h1 {
+      position: relative;
+      color: #fff;
+      font-size: 2rem; }
+  #serviceCards .container div:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(/dist/assets/images/services-5.jpg);
+    background-size: cover;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    width: 400px;
+    height: 280px;
+    border-radius: 5px; }
+    #serviceCards .container div:last-child::before {
+      content: "";
+      position: absolute;
+      width: 400px;
+      height: 280px;
+      background-color: black;
+      opacity: 0.5;
+      border-radius: 5px; }
+    #serviceCards .container div:last-child h1 {
+      position: relative;
+      color: #fff;
+      font-size: 2rem; }
+
+#serviceCards div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f3f3;
+  padding: 2rem; }
+  #serviceCards div a {
+    background-color: #3c6997;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    width: 150px;
+    border-radius: 5px; }
+    #serviceCards div a:hover {
+      background-color: #646464;
+      transition: 0.2s ease-in-out; }
+
+#consultBanner .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem; }
+  #consultBanner .container h1 {
+    color: #3c6997;
+    font-size: 2.5rem; }
+
+#expertConsult .container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 3rem; }
+  #expertConsult .container .consult-services {
+    width: 400px; }
+    #expertConsult .container .consult-services div {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      gap: 2rem; }
+      #expertConsult .container .consult-services div h1 {
+        color: #545454;
+        font-size: 2.5rem; }
+      #expertConsult .container .consult-services div i {
+        color: #3c6997;
+        font-size: 3rem; }
+    #expertConsult .container .consult-services p {
+      color: #545454;
+      font-size: 1.2rem;
+      margin-top: 1rem; }
+
+#expertConsult .get-started-services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 2rem; }
+  #expertConsult .get-started-services a {
+    background-color: #3c6997;
+    color: #fff;
+    padding: 1rem;
+    width: 140px;
+    border-radius: 5px; }
+
+#aboutHero .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/dist/assets/images/about-1.jpg);
+  background-size: cover;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: 450px; }
+  #aboutHero .container::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 450px;
+    background-color: black;
+    opacity: 0.5; }
+  #aboutHero .container h1 {
+    color: white;
+    font-size: 4rem;
+    position: relative; }
+
+#aboutInfo .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 4rem; }
+  #aboutInfo .container h1 {
+    color: #3c6997;
+    font-size: 3rem; }
+  #aboutInfo .container p {
+    color: #545454;
+    font-size: 1.2rem;
+    width: 800px; }
+
+#teamBanner .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f3f3;
+  padding: 2rem; }
+  #teamBanner .container h1 {
+    font-size: 2.5rem;
+    color: #545454; }
+
+#teamCards .container {
+  display: grid;
+  grid-template-columns: repeat(2, 400px);
+  justify-content: center;
+  grid-gap: 3rem;
+  background-color: #f3f3f3;
+  padding-bottom: 3rem; }
+  #teamCards .container div {
+    background-color: white;
+    width: 400px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px; }
+    #teamCards .container div img {
+      width: 400px;
+      border-top-right-radius: 5px;
+      border-top-left-radius: 5px; }
+    #teamCards .container div h1,
+    #teamCards .container div h2,
+    #teamCards .container div p {
+      margin-left: 2rem; }
+    #teamCards .container div h1 {
+      font-size: 0.8rem;
+      color: #545454;
+      margin-top: 2rem; }
+    #teamCards .container div h2 {
+      color: #3c6997; }
+    #teamCards .container div p {
+      color: #545454;
+      padding-bottom: 2rem; }
+
+#pricingHero .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/dist/assets/images/pricing-1.jpg);
+  background-size: cover;
+  background-position: 2px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: 450px; }
+  #pricingHero .container::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 450px;
+    background-color: black;
+    opacity: 0.5; }
+  #pricingHero .container h1 {
+    color: white;
+    font-size: 4rem;
+    position: relative; }
 
 #footer .container {
   background-color: #dcdcdc;
