@@ -14,6 +14,7 @@ html,
 body {
   max-width: 100vw;
   font-family: "DM Sans", sans-serif;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -156,6 +157,11 @@ li {
         font-size: 1rem;
         font-weight: 300;
         margin-top: 1rem;
+      }
+
+      .scroll-down2 {
+        padding: 0;
+        background-color: white;
       }
     }
   }
@@ -308,10 +314,12 @@ li {
   }
 }
 
+// Info Banner
+
 #infoBanner {
   .container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: row;
     margin-top: 8rem;
@@ -338,7 +346,7 @@ li {
       p {
         color: $text-color;
         font-size: 1.5rem;
-        padding-bottom: 2rem;
+        padding-bottom: 1rem;
       }
 
       a {
@@ -936,7 +944,7 @@ li {
   }
 }
 
-// Pricing Hero
+// Pricing
 
 #pricingHero {
   .container {
@@ -963,6 +971,151 @@ li {
       color: white;
       font-size: 4rem;
       position: relative;
+    }
+  }
+}
+
+#pricingBanner {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem;
+
+    h1,
+    i {
+      font-size: 2.5rem;
+    }
+
+    h1 {
+      color: $accent-color;
+    }
+
+    i {
+      color: $accent-color;
+      margin-top: 1rem;
+    }
+  }
+}
+
+#pricingCards {
+  .container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+    .pricing-card {
+      background-color: $light-bg;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 5px;
+      padding: 3rem;
+      width: 350px;
+
+      .pricing-service {
+        h1 {
+          color: $accent-color;
+          font-size: 2rem;
+        }
+
+        p {
+          font-size: 1.2rem;
+          color: $text-color;
+
+          span {
+            font-size: 0.8rem;
+          }
+        }
+      }
+
+      .line {
+        width: 100px;
+        height: 2px;
+        background-color: $dark-bg;
+        margin: 1rem 0;
+      }
+
+      .pricing-features {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        div {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 0.5rem;
+
+          p {
+            color: $text-color;
+          }
+
+          i {
+            color: $text-color;
+          }
+        }
+      }
+
+      .pricing-button {
+        margin-top: 2rem;
+
+        a {
+          background-color: $accent-color;
+          color: $text-color-2;
+          padding: 0.8rem;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}
+
+// Consultation Pricing
+
+#consultPricing {
+  .container {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: $light-bg;
+    padding: 3rem;
+
+    .consult-card {
+      background: white;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+      padding: 2rem;
+      width: 450px;
+
+      .consult-service {
+        h1 {
+          color: $accent-color;
+        }
+        p {
+          color: $text-color;
+          font-size: 1.2rem;
+        }
+      }
+
+      .line {
+        background-color: $dark-bg;
+        margin: 1rem 0;
+        width: 200px;
+        height: 2px;
+      }
+
+      .consult-description {
+        color: $text-color;
+        font-size: 1.2rem;
+      }
+
+      .consult-get-started {
+        margin-top: 2rem;
+        a {
+          background-color: $accent-color;
+          color: $text-color-2;
+          padding: 0.8rem;
+          border-radius: 5px;
+        }
+      }
     }
   }
 }
