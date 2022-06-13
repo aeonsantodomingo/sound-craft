@@ -438,8 +438,11 @@ li {
       background-color: white;
       width: 400px;
       box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 5px;
       img {
         width: 400px;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
       }
 
       h1,
@@ -470,6 +473,7 @@ li {
         margin-bottom: 1rem;
       }
     }
+
     div:last-child {
       display: flex;
       justify-content: center;
@@ -479,8 +483,11 @@ li {
       background-color: white;
       width: 400px;
       box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 5px;
       img {
         width: 400px;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
       }
 
       h1,
@@ -1014,13 +1021,13 @@ li {
 
       .pricing-service {
         h1 {
-          color: $accent-color;
-          font-size: 2rem;
+          color: $text-color;
+          font-size: 1.2rem;
         }
 
         p {
-          font-size: 1.2rem;
-          color: $text-color;
+          font-size: 2rem;
+          color: $accent-color;
 
           span {
             font-size: 0.8rem;
@@ -1084,14 +1091,15 @@ li {
       box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
       padding: 2rem;
       width: 450px;
+      border-radius: 5px;
 
       .consult-service {
         h1 {
-          color: $accent-color;
+          color: $text-color;
         }
         p {
-          color: $text-color;
-          font-size: 1.2rem;
+          color: $accent-color;
+          font-size: 2rem;
         }
       }
 
@@ -1108,10 +1116,98 @@ li {
       }
 
       .consult-get-started {
-        margin-top: 2rem;
+        margin-top: 1.5rem;
         a {
           background-color: $accent-color;
           color: $text-color-2;
+          padding: 0.8rem;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}
+
+// Careers
+
+#careersHero {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/dist/assets/images/careers-1.jpg);
+    background-size: cover;
+    background-position: 1px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    height: 450px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 450px;
+      background-color: black;
+      opacity: 0.5;
+    }
+
+    h1 {
+      color: white;
+      font-size: 4rem;
+      position: relative;
+    }
+  }
+}
+
+#careersBanner {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+
+    h1 {
+      color: $accent-color;
+      font-size: 2.5rem;
+    }
+  }
+}
+
+#jobPostings {
+  .container {
+    display: grid;
+    grid-template-columns: repeat((2, 500px));
+    gap: 4rem;
+    justify-content: center;
+    place-items: center;
+    padding-bottom: 3rem;
+    .job-card {
+      background-color: $light-bg;
+      width: 500px;
+      padding: 2rem;
+      border-radius: 5px;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+      .job-title {
+        h1 {
+          color: $accent-color;
+        }
+
+        p {
+          color: $text-color;
+        }
+      }
+
+      .job-description {
+        color: $text-color;
+        margin-top: 0.4rem;
+      }
+
+      .apply-btn {
+        margin-top: 2rem;
+        a {
+          color: $text-color-2;
+          background-color: $accent-color;
           padding: 0.8rem;
           border-radius: 5px;
         }
