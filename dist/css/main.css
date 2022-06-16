@@ -38,20 +38,33 @@ li {
         color: #3c6997; }
       #header .container .header-logo a span {
         color: #3c6997; }
-  #header .container .main-nav ul {
+  #header .container .navbar .nav-menu {
     display: flex;
     flex-direction: row;
     gap: 1rem; }
-    #header .container .main-nav ul li .current {
+    #header .container .navbar .nav-menu li .current {
       color: #3c6997;
       border-bottom: 1px solid #3c6997; }
-    #header .container .main-nav ul li a {
+    #header .container .navbar .nav-menu li a {
       color: #545454;
       font-weight: 600; }
-      #header .container .main-nav ul li a:hover {
+      #header .container .navbar .nav-menu li a:hover {
         color: #3c6997;
         border-bottom: 2px #3c6997 solid;
         transition: 0.2s ease-in-out; }
+    #header .container .navbar .nav-menu .get-started-mobile {
+      display: none; }
+  #header .container .navbar .hamburger {
+    display: none;
+    cursor: pointer; }
+    #header .container .navbar .hamburger .bar {
+      display: block;
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      background-color: #545454; }
   #header .container .get-started a {
     color: #fff;
     background-color: #3c6997;
@@ -819,7 +832,7 @@ li {
   gap: 4rem;
   justify-content: center;
   place-items: center;
-  padding-bottom: 3rem; }
+  padding-bottom: 2rem; }
   #jobPostings .container .job-card {
     background-color: #f3f3f3;
     width: 500px;
@@ -840,6 +853,92 @@ li {
         background-color: #3c6997;
         padding: 0.8rem;
         border-radius: 5px; }
+
+#getStartedHero .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/dist/assets/images/getstarted-1.jpg);
+  background-size: cover;
+  background-position: 1px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: 450px; }
+  #getStartedHero .container::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 450px;
+    background-color: black;
+    opacity: 0.5; }
+  #getStartedHero .container h1 {
+    color: white;
+    font-size: 4rem;
+    position: relative; }
+
+#serviceForm .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2rem; }
+  #serviceForm .container .basic-info {
+    display: flex;
+    flex-direction: column; }
+    #serviceForm .container .basic-info input {
+      padding: 1rem;
+      margin: 1rem 0;
+      width: 500px;
+      border-radius: 5px;
+      border: #3c6997 3px solid; }
+  #serviceForm .container .service-selection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    #serviceForm .container .service-selection label {
+      font-family: "DM Sans", sans-serif;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      color: #3c6997; }
+    #serviceForm .container .service-selection select {
+      width: 500px;
+      padding: 1rem;
+      border-radius: 5px;
+      border: #3c6997 3px solid; }
+  #serviceForm .container .additional-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    #serviceForm .container .additional-info label {
+      font-family: "DM Sans", sans-serif;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      text-align: center;
+      color: #3c6997; }
+    #serviceForm .container .additional-info textarea {
+      width: 500px;
+      resize: none;
+      border-radius: 5px;
+      padding: 0.5rem;
+      border: #3c6997 3px solid; }
+  #serviceForm .container .upload-file {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 1rem; }
+  #serviceForm .container .form-submit {
+    margin-top: 2rem; }
+    #serviceForm .container .form-submit button {
+      background-color: #3c6997;
+      color: #fff;
+      padding: 1rem;
+      width: 200px;
+      border-radius: 5px;
+      border: none; }
 
 #footer .container {
   background-color: #dcdcdc;

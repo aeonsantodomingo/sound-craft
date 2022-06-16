@@ -12,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
   <!-- CSS -->
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/media.css">
   <title>Sound Craft | Mixing & Mastering Services</title>
 </head>
 <body>
@@ -30,14 +31,20 @@
       <div class="header-logo">
         <a href="index.html"><i class="fas fa-record-vinyl"></i> SOUND<span>CRAFT</span></a>
       </div>
-      <nav id="mainNav" class="main-nav">
-        <ul>
-          <li><a href="services.html">SERVICES</a></li>
-          <li><a href="about.html">ABOUT</a></li>
-          <li><a href="pricing.html">PRICING</a></li>
-          <li><a href="careers.html">CAREERS</a></li>
-          <li><a href="blog.html">BLOG</a></li>
+      <nav class="navbar">
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html" class="current">HOME</a></li>
+          <li class="nav-item"><a href="services.html">SERVICES</a></li>
+          <li class="nav-item"><a href="about.html">ABOUT</a></li>
+          <li class="nav-item"><a href="pricing.html">PRICING</a></li>
+          <li class="nav-item"><a href="careers.html">CAREERS</a></li>
+          <li class="nav-item get-started-mobile"><a href="get-started.html">GET STARTED</a></li>
         </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </nav>
       <div class="get-started">
         <a href="get-started.html">GET STARTED</a>
@@ -65,6 +72,8 @@
 
         <a class="scroll-down2" href="#infoBanner"><h2><i class="fas fa-arrow-down-long"></i> Scroll Down</h2></a>
       </div>
+
+      <!-- nth 2 -->
       <div>
         <img src="/dist/assets/images/blog-1.png" alt="sound wave picture">
         <h1>TIPS & TRICKS</h1>
@@ -120,7 +129,7 @@
       <div>
         <p>Select a package or service</p>
         <p>Prepare & send us your audio files</p>
-        <p>Provide your fans with high quality music</p>
+        <p>Provide your fans with quality music</p>
       </div>
     </div>
   </section>
@@ -203,6 +212,7 @@
     </div>
   </footer>
   
+  <script src="/dist/app.js"></script>
   
 </body>
 </html>

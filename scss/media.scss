@@ -1,0 +1,464 @@
+@import "colors";
+
+// Mobile Devices
+
+@media screen and (max-width: 767px) {
+  #topBar {
+    .container {
+      p {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+    }
+  }
+
+  #header {
+    .container {
+      justify-content: space-between;
+      align-items: center;
+      .header-logo {
+        font-size: 2rem;
+      }
+      .navbar {
+        .nav-menu {
+          position: fixed;
+          left: -600px;
+          top: 150px;
+          gap: 0;
+          flex-direction: column;
+          background-color: $accent-color;
+          width: 100%;
+          text-align: center;
+          transition: 0.3s;
+          padding: 2rem;
+
+          .nav-item {
+            margin: 16px 0;
+
+            .current {
+              border-bottom: 2px $text-color-2 solid;
+            }
+
+            a {
+              color: white;
+            }
+          }
+
+          .get-started-mobile {
+            display: block;
+            a {
+              color: gold;
+            }
+          }
+        }
+        .nav-menu.active {
+          left: 0;
+          z-index: 500;
+        }
+
+        .hamburger {
+          display: block;
+        }
+
+        .hamburger.active .bar:nth-child(2) {
+          opacity: 0;
+        }
+        .hamburger.active .bar:nth-child(1) {
+          transform: translateY(8px) rotate(45deg);
+        }
+        .hamburger.active .bar:nth-child(3) {
+          transform: translateY(-8px) rotate(-45deg);
+        }
+      }
+
+      .get-started {
+        display: none;
+      }
+    }
+  }
+
+  #homeHero {
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 0.5rem;
+      padding: 0 2rem;
+
+      div:first-child {
+        h1 {
+          font-size: 2rem;
+        }
+
+        p {
+          font-size: 1rem;
+        }
+
+        .scroll-down2 {
+          display: none;
+        }
+      }
+
+      div:nth-child(2) {
+        img {
+          margin: 2rem 0;
+        }
+
+        a {
+          margin-bottom: 2rem;
+        }
+      }
+
+      div:nth-child(3),
+      div:nth-child(4) {
+        display: none;
+      }
+    }
+  }
+
+  #infoBanner {
+    .container {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: 4rem;
+
+      div:first-child {
+        img {
+          width: 300px;
+          height: 250px;
+        }
+      }
+
+      div:last-child {
+        margin-top: 2rem;
+        h1 {
+          font-size: 1.5rem;
+        }
+
+        p {
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+
+  #howToStart {
+    .container {
+      div:nth-child(2) {
+        flex-direction: column;
+        gap: 2rem;
+
+        p {
+          width: 300px;
+          height: 150px;
+
+          &:first-child {
+            border-right: lightgray 2px solid;
+            border-radius: 0 0 0 0;
+          }
+          &:nth-child(2) {
+            border-right: none;
+          }
+          &:last-child {
+            border-radius: 0 0 0 0;
+          }
+        }
+      }
+    }
+  }
+
+  #infoCards {
+    .container {
+      flex-direction: column;
+      gap: 2rem;
+
+      div:first-child {
+        width: 300px;
+        img {
+          width: 300px;
+        }
+      }
+      div:last-child {
+        width: 300px;
+        img {
+          width: 300px;
+        }
+      }
+    }
+  }
+
+  .satisfied-customers {
+    .container {
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  // Mobile Services
+
+  #servicesHero {
+    .container {
+      height: 250px;
+
+      &::before {
+        height: 250px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .mix-mast {
+    .container {
+      div {
+        width: 400px;
+        h1 {
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+
+  #serviceBanner {
+    .container {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  #serviceCards {
+    .container {
+      display: flex;
+      flex-direction: column;
+
+      div:first-child,
+      div:nth-child(2),
+      div:nth-child(3),
+      div:last-child {
+        width: 300px;
+        &::before {
+          width: 300px;
+        }
+      }
+    }
+  }
+
+  #consultBanner {
+    .container {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 2rem;
+      margin-top: 2rem;
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  #expertConsult {
+    .container {
+      flex-direction: column;
+      gap: 2rem;
+
+      .consult-services {
+        width: 300px;
+      }
+    }
+  }
+
+  // Mobile About
+
+  #aboutHero {
+    .container {
+      height: 250px;
+
+      &::before {
+        height: 250px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  #aboutInfo {
+    .container {
+      padding: 2rem;
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      p {
+        margin-top: 1rem;
+        width: 300px;
+      }
+    }
+  }
+
+  #teamCards {
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      div {
+        width: 300px;
+        height: 350px;
+
+        img {
+          width: 300px;
+        }
+      }
+    }
+  }
+
+  // Mobile Pricing
+
+  #pricingHero {
+    .container {
+      height: 250px;
+      &::before {
+        height: 250px;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  #pricingBanner {
+    .container {
+      h1,
+      i {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  #pricingCards {
+    .container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+
+      .pricing-card {
+        width: 300px;
+      }
+    }
+  }
+
+  #consultPricing {
+    .container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      .consult-card {
+        width: 300px;
+      }
+    }
+  }
+
+  // Mobile Careers
+
+  #careersHero {
+    .container {
+      height: 250px;
+
+      &::before {
+        height: 250px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  #careersBanner {
+    .container {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  #jobPostings {
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 2rem;
+
+      .job-card {
+        width: 300px;
+      }
+    }
+  }
+
+  // Mobile Get Started
+
+  #getStartedHero {
+    .container {
+      height: 250px;
+
+      &::before {
+        height: 250px;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  #serviceForm {
+    .container {
+      justify-content: center;
+      align-items: center;
+      .basic-info {
+        input {
+          width: 300px;
+        }
+      }
+
+      .service-selection {
+        select {
+          width: 300px;
+        }
+      }
+
+      .additional-info {
+        textarea {
+          width: 300px;
+        }
+      }
+    }
+  }
+
+  // Mobile Footer
+
+  #footer {
+    .container {
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .footer-credits {
+      p {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

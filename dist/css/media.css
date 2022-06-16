@@ -1,0 +1,224 @@
+@media screen and (max-width: 767px) {
+  #topBar .container p {
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+  #header .container {
+    justify-content: space-between;
+    align-items: center; }
+    #header .container .header-logo {
+      font-size: 2rem; }
+    #header .container .navbar .nav-menu {
+      position: fixed;
+      left: -600px;
+      top: 150px;
+      gap: 0;
+      flex-direction: column;
+      background-color: #3c6997;
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+      padding: 2rem; }
+      #header .container .navbar .nav-menu .nav-item {
+        margin: 16px 0; }
+        #header .container .navbar .nav-menu .nav-item .current {
+          border-bottom: 2px #fff solid; }
+        #header .container .navbar .nav-menu .nav-item a {
+          color: white; }
+      #header .container .navbar .nav-menu .get-started-mobile {
+        display: block; }
+        #header .container .navbar .nav-menu .get-started-mobile a {
+          color: gold; }
+    #header .container .navbar .nav-menu.active {
+      left: 0;
+      z-index: 500; }
+    #header .container .navbar .hamburger {
+      display: block; }
+    #header .container .navbar .hamburger.active .bar:nth-child(2) {
+      opacity: 0; }
+    #header .container .navbar .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg); }
+    #header .container .navbar .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg); }
+    #header .container .get-started {
+      display: none; }
+  #homeHero .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0.5rem;
+    padding: 0 2rem; }
+    #homeHero .container div:first-child h1 {
+      font-size: 2rem; }
+    #homeHero .container div:first-child p {
+      font-size: 1rem; }
+    #homeHero .container div:first-child .scroll-down2 {
+      display: none; }
+    #homeHero .container div:nth-child(2) img {
+      margin: 2rem 0; }
+    #homeHero .container div:nth-child(2) a {
+      margin-bottom: 2rem; }
+    #homeHero .container div:nth-child(3),
+    #homeHero .container div:nth-child(4) {
+      display: none; }
+  #infoBanner .container {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 4rem; }
+    #infoBanner .container div:first-child img {
+      width: 300px;
+      height: 250px; }
+    #infoBanner .container div:last-child {
+      margin-top: 2rem; }
+      #infoBanner .container div:last-child h1 {
+        font-size: 1.5rem; }
+      #infoBanner .container div:last-child p {
+        font-size: 1.3rem; }
+  #howToStart .container div:nth-child(2) {
+    flex-direction: column;
+    gap: 2rem; }
+    #howToStart .container div:nth-child(2) p {
+      width: 300px;
+      height: 150px; }
+      #howToStart .container div:nth-child(2) p:first-child {
+        border-right: lightgray 2px solid;
+        border-radius: 0 0 0 0; }
+      #howToStart .container div:nth-child(2) p:nth-child(2) {
+        border-right: none; }
+      #howToStart .container div:nth-child(2) p:last-child {
+        border-radius: 0 0 0 0; }
+  #infoCards .container {
+    flex-direction: column;
+    gap: 2rem; }
+    #infoCards .container div:first-child {
+      width: 300px; }
+      #infoCards .container div:first-child img {
+        width: 300px; }
+    #infoCards .container div:last-child {
+      width: 300px; }
+      #infoCards .container div:last-child img {
+        width: 300px; }
+  .satisfied-customers .container h1 {
+    font-size: 2.5rem; }
+  #servicesHero .container {
+    height: 250px; }
+    #servicesHero .container::before {
+      height: 250px; }
+    #servicesHero .container h1 {
+      font-size: 2rem; }
+  .mix-mast .container div {
+    width: 400px; }
+    .mix-mast .container div h1 {
+      font-size: 3rem; }
+  #serviceBanner .container h1 {
+    font-size: 2rem; }
+  #serviceCards .container {
+    display: flex;
+    flex-direction: column; }
+    #serviceCards .container div:first-child,
+    #serviceCards .container div:nth-child(2),
+    #serviceCards .container div:nth-child(3),
+    #serviceCards .container div:last-child {
+      width: 300px; }
+      #serviceCards .container div:first-child::before,
+      #serviceCards .container div:nth-child(2)::before,
+      #serviceCards .container div:nth-child(3)::before,
+      #serviceCards .container div:last-child::before {
+        width: 300px; }
+  #consultBanner .container {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem;
+    margin-top: 2rem; }
+    #consultBanner .container h1 {
+      font-size: 2rem; }
+  #expertConsult .container {
+    flex-direction: column;
+    gap: 2rem; }
+    #expertConsult .container .consult-services {
+      width: 300px; }
+  #aboutHero .container {
+    height: 250px; }
+    #aboutHero .container::before {
+      height: 250px; }
+    #aboutHero .container h1 {
+      font-size: 2rem; }
+  #aboutInfo .container {
+    padding: 2rem; }
+    #aboutInfo .container h1 {
+      font-size: 2.5rem; }
+    #aboutInfo .container p {
+      margin-top: 1rem;
+      width: 300px; }
+  #teamCards .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    #teamCards .container div {
+      width: 300px;
+      height: 350px; }
+      #teamCards .container div img {
+        width: 300px; }
+  #pricingHero .container {
+    height: 250px; }
+    #pricingHero .container::before {
+      height: 250px; }
+    #pricingHero .container h1 {
+      font-size: 2rem; }
+  #pricingBanner .container h1,
+  #pricingBanner .container i {
+    font-size: 2rem; }
+  #pricingCards .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; }
+    #pricingCards .container .pricing-card {
+      width: 300px; }
+  #consultPricing .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; }
+    #consultPricing .container .consult-card {
+      width: 300px; }
+  #careersHero .container {
+    height: 250px; }
+    #careersHero .container::before {
+      height: 250px; }
+    #careersHero .container h1 {
+      font-size: 2rem; }
+  #careersBanner .container h1 {
+    font-size: 2rem; }
+  #jobPostings .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem; }
+    #jobPostings .container .job-card {
+      width: 300px; }
+  #getStartedHero .container {
+    height: 250px; }
+    #getStartedHero .container::before {
+      height: 250px; }
+    #getStartedHero .container h1 {
+      font-size: 2rem; }
+  #serviceForm .container {
+    justify-content: center;
+    align-items: center; }
+    #serviceForm .container .basic-info input {
+      width: 300px; }
+    #serviceForm .container .service-selection select {
+      width: 300px; }
+    #serviceForm .container .additional-info textarea {
+      width: 300px; }
+  #footer .container {
+    flex-direction: column;
+    gap: 2rem; }
+  #footer .footer-credits p {
+    font-size: 0.8rem; } }
